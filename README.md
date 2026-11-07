@@ -42,7 +42,12 @@ Pandas was chosen because the assignment dataset is relatively small (140 invoic
 
 The backend is built with FastAPI and exposes endpoints for the assistant, configuration, financial summaries, dashboards, invoice exploration, usage information and conversation history.
 
-The LLM is responsible for interpreting user intent and selecting the appropriate route and tools. The backend executes the selected operations and provides the information required to generate the final answer.
+The LLM is responsible for interpreting user intent and selecting the appropriate route and tools. The application separates routing decisions from answer generation:
+
+- **Routing:** The model's thinking capability is enabled to interpret the user's request, determine the appropriate route and select the required tools.
+- **Answer generation:** Thinking mode is disabled. Instead, the backend executes the selected operations deterministically and provides their structured results, together with the relevant procurement policy context, to the LLM to formulate the final response.
+
+This separation keeps financial calculations and data retrieval under backend control, while using the LLM to interpret requests and communicate the results in natural language.
 
 The routing layer uses structured decisions and validation to ensure that model outputs conform to the expected routing schema. A retry mechanism is available when a routing decision cannot be successfully parsed or validated.
 
@@ -148,6 +153,10 @@ Four generation models were compared:
 - `qwen3.5:9b`
 
 A separate LLM judge (`gpt-oss:20b`) was used to assess answer quality.
+
+The four models were selected following preliminary tests in the local development environment. Only models achieving an average response latency below 15 seconds during these tests were shortlisted for the comparative evaluation.
+
+This threshold was used as a practical selection criterion based on the available hardware (AMD Ryzen AI 7 350, 32GB RAM, NVIDIA GeForce RTX 5070 8 GB GDDR7) and development constraints, rather than as a general performance benchmark.
 
 ### Evaluation metrics
 
@@ -292,6 +301,7 @@ Potential improvements include:
 - **Data validation:** Introduce schema checks, reconciliation against source systems, duplicate detection and data quality monitoring.
 - **Incremental processing:** Process new and updated invoices rather than rebuilding the complete dataset every time.
 - **Data versioning and lineage:** Keep track of source files, transformation versions, exchange rates and processing dates.
+- **Evolving data and tools:** When new data sources or business requirements are introduced, extend the preprocessing pipeline and the deterministic toolset to make the additional information available to the assistant.
 
 For production, I would also consider separating the analytical data layer from the transactional application database. PostgreSQL could continue to manage conversations, configuration and audit metadata, while a suitable analytical storage or warehouse platform could serve larger financial datasets.
 
@@ -375,6 +385,12 @@ I would introduce:
 - Release thresholds for factual accuracy, routing reliability, latency and cost.
 
 If a dedicated RAG or document retrieval pipeline is introduced in the future, frameworks such as RAGAS could help evaluate retrieval and generation quality. The current implementation primarily uses deterministic tools and directly supplied policy context, so introducing a full RAG evaluation framework was not a priority for this assignment.
+
+### Internationalisation
+
+The application could be extended to support multiple languages, allowing Finance users from different countries or business units to interact with the assistant in their preferred language.
+
+This would require multilingual prompts, consistent language handling across the interface and generated responses, and evaluation benchmarks covering each supported language.
 
 ---
 

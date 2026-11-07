@@ -10,6 +10,8 @@ PostgreSQL and Next.js were selected partly because of my previous experience wi
 
 A free ChatGPT account was used as an auxiliary development tool for implementation support, troubleshooting, code review and exploring alternative approaches. Suggestions were reviewed, adapted and tested before being incorporated into the project.
 
+I chose this approach instead of running a local Qwen2.5-Coder 14B model through OpenCode or Cline. This avoided competing for local CPU, RAM and GPU resources with the Ollama models used by the application, keeping more resources available for inference and making performance comparisons less affected by competing workloads.
+
 ### Scope and trade-offs
 
 The main priority was delivering a functional end-to-end solution with reliable financial data retrieval, controlled LLM routing, a usable interface and a comparative evaluation framework.

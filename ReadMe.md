@@ -134,7 +134,7 @@ Users can revisit previous conversations, allowing them to recover earlier quest
 
 ---
 
-## 4. Evaluation Approach and Results
+## 3. Evaluation Approach and Results
 
 The evaluation framework was designed to measure both functional reliability and answer quality.
 
@@ -187,7 +187,7 @@ The judge is not treated as an unquestionable source of truth. In a production e
 
 ---
 
-## 5. Installation and Execution
+## 4. Installation and Execution
 
 ### Prerequisites
 
@@ -272,7 +272,7 @@ The generation model can be changed through the application configuration.
 
 ---
 
-## 6. Production Considerations
+## 5. Production Considerations
 
 The current implementation is a functional prototype built around the dataset and constraints of the assignment. Deploying it for approximately 200 Finance users and real financial data would require additional work in several areas.
 
@@ -374,7 +374,7 @@ If a dedicated RAG or document retrieval pipeline is introduced in the future, f
 
 ---
 
-## 7. Scope and Priorities
+## 6. Scope and Priorities
 
 The objective was to deliver a working end-to-end prototype rather than a production-scale financial platform.
 

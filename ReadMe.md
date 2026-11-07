@@ -199,7 +199,7 @@ The judge is not treated as an unquestionable source of truth. In a production e
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AaronMontM/AstraZeneca-Assignment.git
 cd AstraZeneca-Assignment
 ```
 

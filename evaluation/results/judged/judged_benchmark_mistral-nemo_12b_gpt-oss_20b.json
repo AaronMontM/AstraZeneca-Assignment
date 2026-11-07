@@ -1,0 +1,3777 @@
+{
+    "metadata": {
+        "judge_model": "gpt-oss:20b",
+        "source_benchmark": {
+            "timestamp": "2026-11-06T21:14:55.384602",
+            "api_url": "http://localhost:8000",
+            "dataset": "/home/aaron/Documentos/repos/AstraZeneca/AstraZeneca-Assignment/evaluation/datasets/ground_truth.xlsx",
+            "total_cases": 100,
+            "successful_initial_requests": 98,
+            "total_follow_up_requests": 20,
+            "successful_follow_up_requests": 20,
+            "total_elapsed_seconds": 1476.216
+        }
+    },
+    "results": [
+        {
+            "case_id": "INV01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant lists exactly the five invoices with the highest EUR amounts, matching the expected answer and table. All amounts and invoice numbers are correct."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims (invoice numbers, vendors, dates, EUR amounts) are directly supported by the retrieved evidence. No fabricated or unsupported information is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s question, providing the requested list and a concise table. No irrelevant content is included."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the five invoices that satisfy the query, making it highly relevant to the question."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all necessary information (invoice numbers, vendors, dates, EUR amounts) to answer the question, so recall is complete."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly lists all eight invoices and their EUR amounts, matching the ground‑truth table. No factual inaccuracies are present. The omission of a note about credit notes is a missing detail, not a factual error, so the factual content remains correct."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant (number of invoices, each invoice’s amount, and the fact that all eight are shown) are directly supported by the retrieved evidence. No unsupported or fabricated information is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly answers the user’s request to show invoices with a net amount below €5,000 by providing the relevant list. No extraneous or irrelevant information is included."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the eight invoices that satisfy the query, making it highly relevant to the user’s question."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all necessary information (the eight invoices and their amounts) required to answer the question, so recall is complete."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly reports 89 EUR invoices, 27 GBP invoices, and 24 USD invoices, matching the expected answer and the ground truth."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The counts are directly taken from the retrieved evidence’s breakdown, so the assistant’s statements are fully supported by the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly addresses the user’s question without adding irrelevant information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence (get_spend_summary) contains a currency‑grouped breakdown, which is precisely the type of data needed to answer the question."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "All necessary invoice counts for EUR, GBP, and USD are present in the evidence, so the evidence fully recalls the required information."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s table exactly matches the expected table, and the total invoice count (140) and total net spend (€6,886,631.10) are correct."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All figures in the assistant’s answer are directly taken from the retrieved evidence; no invented or unsupported data is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses the user’s request for monthly invoice counts and total net spend for 2025."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence contains the same monthly breakdown and totals that the assistant presents, making it highly relevant."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes all necessary information (invoice counts, net spend per month, and totals) to answer the question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly states that there are 21 invoices with a missing PO reference, matching the expected answer. The list of invoices provided matches the expected table exactly."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant (21 invoices, the details of each invoice) are directly supported by the retrieved evidence from the search_invoices tool."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly addresses the user’s request to list all invoices with a missing purchase order, providing the complete list without irrelevant information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the relevant invoice records that satisfy the query, with no unrelated data included."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all 21 invoices required to answer the question, ensuring full recall of necessary information."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly states that there are 25 invoices missing an approver record, matching the expected answer. The detailed table lists exactly those 25 invoices, and each record in the evidence has `missing_approver: true`. No factual inaccuracies are present."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant are directly supported by the retrieved evidence. The list of invoices and their attributes (vendor, amount, required approver, approved_by) match the evidence records, and the count of 25 invoices is consistent with the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly answers the user’s question by providing the exact set of invoices missing an approver record. No irrelevant or extraneous information is included."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of invoices that have `missing_approver: true`, which is precisely the information needed to answer the question. All evidence is relevant."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all 25 invoices that satisfy the query, matching the expected table. No relevant records are omitted."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly lists both credit notes, their original currencies (EUR and USD), and the EUR amounts (-52,749.39 and -25,340.67). All figures match the expected data. No factual inaccuracies are present."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "Every claim made by the assistant (invoice numbers, vendor, dates, currencies, amounts, descriptions) is directly supported by the retrieved evidence. No invented or unsupported information is included."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s request to show all credit notes with original currency and EUR amount, and it does not include irrelevant content."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the two relevant credit note records, which are precisely what the user asked for."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains both credit notes and all necessary fields to answer the question, ensuring complete recall of required information."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s table matches the expected invoice data exactly: invoice numbers, dates, vendor names, and EUR amounts all align with the expected table. The assistant also correctly states that there are 49 invoices from Spanish vendors and lists the ten most recent."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All information presented in the answer is directly supported by the retrieved evidence. No claims are made that are unsupported or fabricated."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly answers the user’s request by providing the ten most recent invoices from Spanish vendors, with no extraneous or missing information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The evidence retrieved contains only invoices from Spanish vendors, which is precisely what the user asked for."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence includes all ten invoices needed to answer the question, ensuring complete recall."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly states 26 invoices and a net EUR spend of €1,109,895.29, which matches the expected answer and the ground‑truth data."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the retrieved evidence: the evidence lists an invoice_count of 26 and a total_eur_spend of 1,109,895.29."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s question without adding irrelevant information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence is highly relevant, providing exactly the data needed to answer the question."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "All necessary information (invoice count and net spend) is present in the retrieved evidence."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identifies INV-20094 as the highest-value invoice, matching the expected answer’s invoice number, vendor, date, and amount."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All factual claims (invoice number, vendor, date, EUR amount) are directly supported by the retrieved evidence record."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s question and includes only relevant details (invoice info and a concise table)."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence is highly relevant, containing the exact invoice record needed to answer the question."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes all necessary information (invoice number, vendor, date, EUR amount) to determine the highest-value invoice."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s invoice counts (89, 27, 24) and net EUR spend figures (€4,493,726.12, €1,377,108.82, €1,015,796.16) exactly match the expected table and the retrieved evidence."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All numerical claims are directly supported by the retrieved evidence’s breakdown, with no invented or unsupported information."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request for invoice counts and net EUR spend by original currency, without irrelevant content."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence is precisely the spend summary grouped by currency, which is the relevant context for the question."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all necessary data (invoice counts and net EUR spend per currency) required to answer the question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All invoice counts and net EUR spend figures match the expected table and the evidence exactly. The totals also sum correctly."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s numbers are directly taken from the retrieved evidence (get_spend_summary), with no invented or unsupported claims."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request by listing invoice counts and net spend per cost centre, and includes the overall totals, providing a complete comparison."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence is precisely the spend summary grouped by cost centre, which is exactly what the user asked for."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "All necessary data to answer the question is present in the evidence, and the assistant used it fully."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 0.0,
+                    "rationale": "The assistant incorrectly states that a €5,000 invoice requires approval by the Department Head. According to the policy table, invoices up to €5,000 are approved by the Cost Center Owner."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.0,
+                    "rationale": "The factual claim that the Department Head must approve a €5,000 invoice contradicts the policy, which specifies the Cost Center Owner."
+                },
+                "faithfulness": {
+                    "score": 0.0,
+                    "rationale": "The assistant’s statement is not supported by the supplied evidence; the evidence clearly indicates the Cost Center Owner as the approver."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses the user’s question, providing a specific answer (though incorrect). No irrelevant or missing information is present."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identified the relevant section (Approval Thresholds) and applied the rule that invoices between €50,000.01 and €250,000 require the Finance Director as approver. No incorrect or invented policy elements were introduced."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s factual claim that the required approver for a €75,000 invoice is the Finance Director aligns with the policy table and the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s statement is directly supported by the procurement policy excerpt provided, which lists the Finance Director as the approver for the €50,000.01–€250,000 range."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question without adding irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly cites the policy’s payment terms (60 days net) and the Treasury approval threshold for early‑payment discounts (above 2%). No policy rules were omitted or misinterpreted."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements match the procurement policy: 60‑day net terms and Treasury approval required for discounts over 2%."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the provided policy excerpt; no invented or unsupported information is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses both parts of the user’s question without extraneous content."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly lists the 21 invoices with missing PO references and correctly states the PO requirement for purchases ≥ €1,000. However, it omits the policy’s additional requirement that such invoices must be flagged to the Cost Center owner and reported quarterly to the Finance Controls Committee, which is a relevant omission."
+                },
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "The assistant accurately reports the number of invoices, their amounts, and the PO requirement. It fails to mention the mandatory flagging and quarterly reporting requirement, so the answer is incomplete relative to the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant are supported by the retrieved evidence and the policy excerpt. No unsupported or fabricated statements are present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses both parts of the user’s question: identifying invoices without PO references and stating the policy requirement for those above €1,000."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the 21 invoices that match the user’s query, making it highly relevant."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes all 21 invoices required to answer the question, so the necessary information is fully recalled."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.25,
+                    "rationale": "The assistant correctly applies the policy that invoices lacking an approver must be held, but it incorrectly reports the number of such invoices (states 8 or 10 instead of the 25 required) and omits the remaining 15 invoices. The answer is therefore only partially correct."
+                },
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "The assistant’s factual claim that only 8 (or 10) invoices lack an approver contradicts the expected answer of 25 invoices. This is a clear factual error, though the policy statement it cites is correct."
+                },
+                "faithfulness": {
+                    "score": 0.25,
+                    "rationale": "The assistant’s claim about the number of invoices missing approvers is not supported by the retrieved evidence, which lists 10 such invoices. The answer therefore lacks faithfulness to the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 0.5,
+                    "rationale": "The assistant addresses the user’s request by listing invoices and explaining the payment rule, but it fails to provide the full set of 25 invoices, making the answer incomplete."
+                },
+                "context_precision": {
+                    "score": 0.75,
+                    "rationale": "The evidence retrieved is relevant to the question (it contains invoice records with missing approvers). The assistant uses this evidence to support its explanation, so the precision of the context is high."
+                },
+                "context_recall": {
+                    "score": 0.25,
+                    "rationale": "The retrieved evidence only includes 10 invoices, whereas the user’s question requires all 25 invoices without approvers. The assistant does not recall the missing 15 invoices, so recall is low."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.75,
+                    "rationale": "The assistant correctly lists all 29 invoices and applies the procurement policy by stating that invoices from non‑ACTIVE vendors must be escalated to Procurement Excellence. However, the bullet‑point summary incorrectly reports only 2 ON_HOLD and 3 INACTIVE invoices, which is factually inaccurate. The overall answer is mostly correct but contains a notable omission/incorrect detail."
+                },
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "While the assistant correctly states that there are 29 invoices and that escalation is required, the counts of ON_HOLD and INACTIVE invoices in the bullet list are wrong. The table itself is accurate, but the presence of incorrect counts reduces overall factual correctness."
+                },
+                "faithfulness": {
+                    "score": 0.6,
+                    "rationale": "The table of invoices is fully supported by the retrieved evidence, and the policy action is supported by the procurement policy. The bullet‑point summary, however, contains unsupported claims (incorrect counts), so the answer is partially faithful."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly lists the requested invoices and explains the required action, fully addressing the user’s question."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "All retrieved evidence pertains to invoices from non‑ACTIVE vendors, which is precisely what the user asked for."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes every invoice that matches the criteria (29 records), so the assistant has recalled all necessary information."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.25,
+                    "rationale": "The assistant correctly lists the two credit notes and cites the policy sections, but it incorrectly asserts that both credit notes are matched to original invoices and are not older than 90 days. Since the evidence does not provide matching or age information, the policy is not correctly applied to the data."
+                },
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "The assistant accurately identifies the two credit notes present in the dataset. However, it incorrectly claims that they are matched and within the 90‑day window, which is not supported by the evidence. Thus the answer is partially correct."
+                },
+                "faithfulness": {
+                    "score": 0.25,
+                    "rationale": "The claim that the credit notes are matched and not older than 90 days is not supported by any field in the retrieved evidence. The assistant invented this information, so the answer is not faithful to the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses the user’s question by listing the credit notes and summarizing the relevant policy provisions. No irrelevant or missing information is present."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists of the two invoices that are the exact records needed to answer the question about which credit notes are present. The evidence is highly relevant."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all the necessary information to identify the credit notes. While it does not include matching or age data, those details are not required to answer the question posed by the user."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "INV20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly combines the financial data (invoice counts and EUR‑converted totals for GBP and USD) with the procurement policy rule (ECB reference rate on invoice date). The conclusion matches the expected answer."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual claims—27 GBP invoices totaling EUR 1,377,108.82, 24 USD invoices totaling EUR 1,015,796.16, and the conversion rule—are accurate and match the ground truth."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the retrieved evidence: the breakdown in the spend summary provides the counts and totals, and the policy excerpt confirms the conversion rule."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s request without adding irrelevant information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence (get_spend_summary result) is highly relevant to summarising non‑EUR invoices and the conversion rule."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all necessary details (counts, totals, and policy rule) required to answer the question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant lists exactly the five vendors with the highest total net spend in EUR, matching the expected answer and the values in the expected table."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All vendor names and spend amounts cited by the assistant are directly taken from the retrieved spend summary evidence, with no invented or altered figures."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question without adding irrelevant information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists of a spend summary grouped by vendor, which is precisely the type of data needed to answer the question."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all five vendors and their corresponding spend amounts, providing complete coverage of the required information."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly reports the invoice counts for each vendor (21, 19, 17) as found in the evidence. However, it presents them in the wrong order, which misrepresents the ranking implied by the question. Therefore the answer is partially correct."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All numerical claims made by the assistant (invoice counts) are directly supported by the retrieved evidence. No invented or unsupported facts are present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses the user’s question by listing the three vendors with the highest invoice counts and providing the corresponding numbers."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence contains a detailed vendor breakdown that is directly relevant to determining the top invoice counts."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes all necessary information (invoice counts for each vendor) to answer the question, so the recall is complete."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.0,
+                    "rationale": "The assistant reports invoice counts and spend amounts, whereas the expected answer requires vendor counts (8 ACTIVE, 1 INACTIVE, 1 ON_HOLD). The assistant’s answer does not match the expected vendor distribution."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims about invoice counts and spend totals are directly supported by the retrieved evidence from the `get_spend_summary` tool."
+                },
+                "answer_relevancy": {
+                    "score": 0.0,
+                    "rationale": "The user asked for the vendor master status distribution (vendor counts). The assistant instead provided invoice counts and spend amounts, which does not answer the question."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence contains a breakdown by vendor status, which is relevant to the user’s request."
+                },
+                "context_recall": {
+                    "score": 0.0,
+                    "rationale": "The evidence does not include the vendor counts needed to answer the question, so it fails to recall the necessary information."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "The assistant lists all 10 vendors, including PharmaPrint Studios and Crown Travel Partners, which are not mentioned in the expected answer that only lists the top three ACTIVE vendors. The ranking order is therefore incorrect for the requested ACTIVE vendors."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All vendor names and spend amounts in the assistant’s answer are directly taken from the retrieved evidence, so the claims are fully supported by the evidence provided."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant provides a ranked list of vendors by net spend, which directly addresses the user’s request to rank ACTIVE vendors."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence contains a vendor‑level spend breakdown, which is precisely the type of information needed to answer the ranking question."
+                },
+                "context_recall": {
+                    "score": 0.0,
+                    "rationale": "The evidence does not include vendor status information, so it lacks the necessary data to determine which vendors are ACTIVE and therefore cannot fully support the user’s request."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.75,
+                    "rationale": "The assistant correctly reports the invoice counts and net spend figures for each country, matching the evidence. However, it omits the vendor counts requested in the question, which means the answer is not fully factually complete."
+                },
+                "faithfulness": {
+                    "score": 0.75,
+                    "rationale": "All factual claims made (invoice counts and net spend) are directly supported by the retrieved evidence. The omission of vendor counts does not introduce false statements, but the answer is not fully faithful to the user’s request."
+                },
+                "answer_relevancy": {
+                    "score": 0.5,
+                    "rationale": "The response addresses part of the user’s request (invoice counts and net spend) but fails to provide vendor counts, which were explicitly asked for. Thus the answer is only partially relevant."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s answer is entirely based on the retrieved evidence, and all cited figures come from that evidence. No irrelevant information was introduced."
+                },
+                "context_recall": {
+                    "score": 0.5,
+                    "rationale": "The retrieved evidence contains invoice counts and net spend but does not include vendor counts. Because the user asked for vendor counts, the evidence lacks the necessary information to fully answer the question, resulting in incomplete recall."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly lists the top three vendor categories and their net spend amounts, which exactly match the figures in the expected table."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant are directly supported by the retrieved evidence from the spend summary, with no invented or unsupported statements."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly addresses the user’s question about which vendor categories have the highest net spend, providing the relevant categories and amounts without extraneous information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence (the spend summary breakdown) is highly relevant to the question, containing the necessary vendor categories and spend figures."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes all the information needed to answer the question, specifically the net spend amounts for each vendor category."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant lists the five most recent invoices with correct invoice numbers, dates, and EUR amounts that match the expected table. All numerical values and ordering are accurate."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant (invoice numbers, dates, amounts, and the fact that five invoices were retrieved) are directly supported by the retrieved evidence. No fabricated or unsupported statements are present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly answers the user’s request to show the five most recent invoices, providing the required information without irrelevant content."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the relevant invoice records needed to answer the question, demonstrating high precision."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all five invoices necessary to answer the question, indicating perfect recall."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.0,
+                    "rationale": "All average invoice amounts reported by the assistant are incorrect when compared to the expected table. The assistant’s figures for PharmaPrint Studios, BioReagent Direct, and Labtech Solutions GmbH differ by several hundred euros from the ground‑truth values, and the ordering of vendors is also wrong."
+                },
+                "faithfulness": {
+                    "score": 0.0,
+                    "rationale": "The assistant’s numerical claims are not supported by the retrieved evidence, which only provides total spend and invoice counts. No calculation or derivation of averages is shown, so the response is not faithful to the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 0.25,
+                    "rationale": "The assistant attempts to answer the user’s question by listing vendors and average amounts, but the information is inaccurate. Because the answer is substantially incorrect, its relevance to the user’s request is low."
+                },
+                "context_precision": {
+                    "score": 0.75,
+                    "rationale": "The retrieved evidence contains vendor names, invoice counts, and total spend, which are relevant to computing average invoice amounts. Thus the evidence is pertinent to the question, though it does not directly provide the averages."
+                },
+                "context_recall": {
+                    "score": 0.75,
+                    "rationale": "The evidence includes all the data needed (total spend and invoice count per vendor) to calculate the averages required by the question. Therefore the retrieved context contains the necessary information, albeit not in the exact form requested."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identified that only vendors with ACTIVE status are eligible for payments, which aligns with the policy statement in section 4.1. The answer addresses the user’s question directly and does not misinterpret any policy thresholds."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The factual claim that only ACTIVE vendors may receive payments is accurate according to the policy excerpt."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s statement is directly supported by the policy text: \"Payments may only be made to vendors with **ACTIVE** status in the Vendor Master.\" No unsupported assumptions were made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s question without adding irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identifies the applicable rule (Section 4.2 of FIN‑POL‑014) and accurately lists the required due diligence items—financial, compliance, and GxP qualification—exactly as stated in the policy."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements (policy reference, required due diligence components) match the policy text and the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the supplied procurement policy excerpt; no invented or unsupported information is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s question with the required due diligence items and does not include irrelevant content."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identified the dual approval and fraud‑prevention callback verification controls required for vendor master data changes, as stated in policy section 4.3. It also added the retention period, which is a valid policy detail, so the answer fully applies the relevant rules."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements—dual approval, fraud‑prevention callback verification, and a 10‑year retention period—are accurate according to the supplied policy excerpt."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the policy text provided; no unsupported assumptions were made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question and includes all required controls, with the additional retention detail being a permissible, non‑misleading expansion."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identifies that recurring services may operate under a blanket PO renewed annually, as stated in section 2.3 of the policy. It also correctly notes that individual invoices still require approval thresholds, which aligns with the policy’s approval rules."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements made by the assistant (blanket PO renewal, invoice approval thresholds) are accurate and directly supported by the policy excerpt."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the provided procurement policy evidence, referencing the correct sections and tables."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question about how recurring service vendors should be covered by purchase orders, providing the relevant policy guidance without unnecessary information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identifies the applicable rule (Section 4.1) and accurately states that invoices from ON_HOLD or INACTIVE vendors must be escalated to Procurement Excellence before processing, while noting that payments are restricted to ACTIVE vendors. No policy requirements are omitted or misinterpreted."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements made by the assistant (escalation requirement and payment restriction) are directly supported by the policy text and match the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are explicitly supported by the retrieved evidence (Section 4.1 of the policy). No invented or unsupported information is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question, providing the precise policy requirement without extraneous information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly lists all 29 invoices from non‑ACTIVE vendors and displays their vendor status, satisfying the user’s request. However, it fails to reference or apply the procurement policy requirement that such invoices must be escalated to Procurement Excellence before processing. Because the policy is not incorporated into the answer, the response is only partially correct in combining financial data with policy."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All invoice numbers, vendor names, vendor statuses, and EUR amounts in the assistant’s table match the expected table exactly. No factual inaccuracies are present."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims (e.g., 29 matching invoices, the details of each invoice) are directly supported by the retrieved evidence. No unsupported or fabricated information is included."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The answer directly addresses the user’s question by listing the requested invoices and vendor statuses. Additional columns are extra but do not detract from relevance."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "All retrieved evidence pertains to the invoices in question; the assistant’s response is based solely on that evidence."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains every invoice needed to answer the question, and the assistant includes all 29 records."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly combines the financial data (invoice counts and net spend per vendor status) with the procurement policy (payment restriction to ACTIVE vendors only). The figures match the spend summary evidence, and the policy interpretation aligns with section 4 of the policy."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All numerical claims (111 invoices, €5,386,246.61 for ACTIVE; 17 invoices, €1,084,833.66 for INACTIVE; 12 invoices, €415,550.83 for ON_HOLD) match the ground‑truth spend summary. The payment restriction statement is also factually correct."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s statements are directly supported by the retrieved evidence: the spend summary tool provides the exact numbers, and the policy excerpt confirms the payment restriction. No unsupported claims are made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request by comparing invoice volume and net spend for each vendor status and explaining the payment restriction. The additional invoice table is ancillary but does not detract from relevance."
+                },
+                "context_precision": {
+                    "score": 0.5,
+                    "rationale": "Out of the two evidence items retrieved, only the spend summary is relevant to the question. The search_invoices result (10 specific invoices) is not needed for the comparison, reducing precision."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The retrieved spend summary contains all the information required to answer the question, so the evidence fully covers the necessary data."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.25,
+                    "rationale": "The assistant uses only 10 of the 17 invoices to compute the net spend, resulting in an incorrect total and omits the required invoice count. This misapplication of the financial data and policy reduces the combined accuracy."
+                },
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "The assistant states a net spend of €739,302.67, whereas the correct total is €1,084,833.66. This factual inaccuracy directly contradicts the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant (net spend of the retrieved invoices and the escalation requirement) are directly supported by the supplied evidence and the procurement policy."
+                },
+                "answer_relevancy": {
+                    "score": 0.5,
+                    "rationale": "The assistant addresses the user’s question but provides an incorrect net spend figure, so the answer is partially relevant but not fully accurate."
+                },
+                "context_precision": {
+                    "score": 0.5,
+                    "rationale": "The retrieved evidence includes 10 relevant invoices, but it does not cover all 17 invoices needed for the complete answer, making the precision moderate."
+                },
+                "context_recall": {
+                    "score": 0.5,
+                    "rationale": "The evidence lacks 7 invoices, so it does not fully recall all information required to answer the question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.75,
+                    "rationale": "The assistant correctly applies the procurement policy: it identifies the vendor as ON_HOLD, notes the need for Procurement Excellence escalation, flags maverick spend due to missing POs, and concludes that payments cannot be made under the current policy. The financial summary is largely accurate, but the assistant omits the total net amount (€415,550.83) that the user’s question implicitly expects, which slightly reduces completeness."
+                },
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "Several factual errors are present: the assistant states the minimum invoice value as €1,556.28, whereas the evidence shows a lower value (€398.89). It also limits the invoice date range to 2025‑02‑17 to 2025‑07‑02, omitting later invoices (e.g., 2025‑08‑07, 2025‑09‑28, 2025‑10‑08). These inaccuracies lower the factual correctness."
+                },
+                "faithfulness": {
+                    "score": 0.5,
+                    "rationale": "Most claims are supported by the retrieved evidence (vendor status, missing PO, maverick spend, total matches, returned records). However, the assistant incorrectly reports the minimum invoice value and the date range, and it omits two invoices that are present in the evidence. Thus the answer is partially faithful."
+                },
+                "answer_relevancy": {
+                    "score": 0.75,
+                    "rationale": "The assistant directly addresses the user’s request by summarising the invoices and explaining the payment eligibility under the policy. The omission of the total net amount slightly reduces relevance, but the core answer remains appropriate."
+                },
+                "context_precision": {
+                    "score": 0.9,
+                    "rationale": "The retrieved evidence is highly relevant to the question, containing detailed invoice records that the assistant uses to construct its summary and policy assessment."
+                },
+                "context_recall": {
+                    "score": 0.5,
+                    "rationale": "The evidence includes 10 of the 12 matching invoices, so the assistant’s summary is missing two invoices (20127 and 20130). Because the user asked for a summary of all invoices, the recall is incomplete."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly combined the financial data (invoice counts for INACTIVE and ON_HOLD vendors) with the procurement policy requirement (escalation to Procurement Excellence)."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The invoice counts (17 for INACTIVE, 12 for ON_HOLD) match the evidence, and the stated action aligns with the policy."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims are directly supported by the retrieved evidence and the policy excerpt."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s question without unnecessary information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence is highly relevant, providing the exact breakdown needed."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all necessary details to answer the question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly interprets the procurement policy regarding inactive vendors and escalation, but it only presents 10 of the 17 invoices and does not provide the total net spend, making the answer partially correct."
+                },
+                "factual_correctness": {
+                    "score": 0.75,
+                    "rationale": "All factual statements about the vendor status and the amounts of the 10 invoices shown are accurate and match the evidence. However, the assistant omitted the total net spend figure that the expected answer includes."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "Every claim made in the assistant’s response (vendor status, escalation requirement, and the details of the 10 invoices) is directly supported by the retrieved evidence and the procurement policy."
+                },
+                "answer_relevancy": {
+                    "score": 0.75,
+                    "rationale": "The assistant addresses the user’s request by showing invoices and explaining vendor status, but it fails to list all 17 invoices, so the answer is only partially complete."
+                },
+                "context_precision": {
+                    "score": 0.9,
+                    "rationale": "The retrieved evidence consists solely of invoices from PharmaPrint Studios, which is highly relevant to the user’s question."
+                },
+                "context_recall": {
+                    "score": 0.5,
+                    "rationale": "The evidence returned includes only 10 of the 17 invoices needed to fully answer the question, so the recall is incomplete."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "VEN20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.25,
+                    "rationale": "The assistant lists two non‑ACTIVE vendors and provides spend figures, but it fails to apply the procurement policy requirement that invoices from ON_HOLD or INACTIVE vendors must be escalated to Procurement Excellence. The answer therefore does not correctly combine financial data with the policy."
+                },
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "The assistant reports 7 invoices and €382,945.11 for PharmaPrint Studios and 3 invoices and €55,452.05 for Crown Travel Partners, whereas the evidence shows 17 invoices and €1,084,833.66 for PharmaPrint, and 12 invoices and €415,550.83 for Crown. The figures are incorrect."
+                },
+                "faithfulness": {
+                    "score": 0.25,
+                    "rationale": "The assistant’s claims about invoice counts and spend are not supported by the retrieved evidence. The evidence contains 29 matching invoices, not the 10 listed, and the totals differ significantly."
+                },
+                "answer_relevancy": {
+                    "score": 0.5,
+                    "rationale": "The assistant addresses the user’s question by naming the vendors and providing spend amounts, but the information is inaccurate. It partially meets the request but fails to deliver correct data."
+                },
+                "context_precision": {
+                    "score": 0.9,
+                    "rationale": "The retrieved evidence is highly relevant to the question, containing all invoices for the two vendors. The assistant’s use of a subset of the evidence does not diminish the precision of the retrieved context."
+                },
+                "context_recall": {
+                    "score": 0.9,
+                    "rationale": "The evidence includes all necessary records (17 invoices for PharmaPrint, 12 for Crown) to answer the question. Thus the recall of relevant information is high."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identifies the threshold of EUR 1,000 and the requirement that the PO be issued before the supplier begins work or ships goods, exactly as stated in section 2.1 of the policy."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The factual statements about the minimum purchase value and PO issuance timing match the policy text and the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the provided procurement policy excerpt, which contains the same wording."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question without adding irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 0.75,
+                    "rationale": "The assistant correctly identifies the applicable rule (2.2) and states the required flagging and quarterly reporting. However, it adds an extra requirement—obtaining a valid PO or evidence of an emergency—which is not specified in the policy. This partial deviation reduces full accuracy."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "The factual claim that invoices above EUR 1,000 without a PO must be flagged and reported quarterly is correct. The additional claim that the Cost Center owner must obtain a valid PO or evidence of an emergency is not supported by the policy and is therefore factually incorrect."
+                },
+                "faithfulness": {
+                    "score": 0.5,
+                    "rationale": "The flagging and reporting statements are supported by the evidence. The claim about obtaining a valid PO or emergency evidence is not supported by the supplied policy excerpt, making the answer only partially faithful."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses the user’s question by providing the required treatment and reporting for maverick spend above the PO threshold, fulfilling the request."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly reproduced the entire invoice approval threshold matrix exactly as specified in the procurement policy and the expected answer, with no omissions or misinterpretations."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual claims (threshold ranges and required approvers) match the policy text and the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s statements are directly supported by the retrieved procurement policy excerpt, which contains the same matrix."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request for the full invoice approval threshold matrix and contains no irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly cites section 3.1 of FIN‑POL‑014, stating that invoices without an approver record must be held and may not be paid, which aligns with the policy text."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The factual claim that an invoice lacking an approver record must be held and cannot be paid is accurate according to the policy excerpt."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All statements made by the assistant are directly supported by the provided policy excerpt (section 3.1). No unsupported or invented claims are present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly addresses the user’s question without adding irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identified the applicable rule (Section 4.1) and accurately applied it: invoices from ON_HOLD or INACTIVE vendors cannot be paid and must be escalated to Procurement Excellence. No policy requirements were omitted or invented."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The factual claim that invoices from ON_HOLD or INACTIVE vendors cannot be paid and must be escalated is directly supported by the policy excerpt and matches the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All statements in the assistant’s response are supported by the supplied procurement policy (Section 4.1). No unsupported assumptions were made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question without adding irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly identifies the required due diligence items (financial, compliance, and GxP where applicable) as mandated by the policy. However, it adds an extra requirement—vendor master data verification—that is not specified in the policy for first‑payment due diligence. This constitutes an inaccuracy, reducing the score to a partial match."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "The statements about financial, compliance, and GxP due diligence are factually correct per the policy. The claim that vendor master data verification is required before first payment is not supported by the policy, making the overall factual accuracy partial."
+                },
+                "faithfulness": {
+                    "score": 0.5,
+                    "rationale": "The assistant’s claims about financial, compliance, and GxP due diligence are directly supported by the policy excerpt. The vendor master data verification claim lacks evidence in the supplied policy, so the answer is only partially faithful."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question by listing the due diligence items required before a new vendor receives its first payment, making it fully relevant."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identifies section 5.1 of FIN‑POL‑014 as the relevant rule and accurately states that the ECB reference rate on the invoice date should be used for group reporting. No policy thresholds or conditions are misapplied."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The factual claim that foreign‑currency invoices are converted using the ECB reference rate on the invoice date is exactly what the policy states."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claim is directly supported by the policy excerpt provided in the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s question without adding irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly cites the policy’s payment terms (60 days net) and Treasury approval threshold (early‑payment discounts above 2%). No policy rules were omitted or misinterpreted."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements match the policy excerpt: 60‑day net terms and 2% discount threshold for Treasury approval."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the provided procurement policy text; no unsupported assumptions were made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question with the required information and contains no extraneous content."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identifies the relevant policy section (6.1) and applies its rules: negative invoice amounts are treated as credit notes and must be matched to the original invoice, and unmatched credit notes older than 90 days are escalated to the Finance Director. No policy requirements are omitted or misinterpreted."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements in the answer (credit note processing, matching requirement, 90‑day escalation, 60‑day payment terms) are accurate and directly reflect the policy text."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "Every claim made by the assistant is supported by the supplied procurement policy excerpt; no unsupported assumptions are introduced."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question, providing the required handling steps for negative invoice amounts and old unmatched credit notes without extraneous or irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 0.75,
+                    "rationale": "The assistant correctly cites the segregation‑of‑duties controls from Section 7 of the policy, which directly answer the user’s question. However, it also includes approval thresholds from Section 3, which are not requested. The inclusion of extraneous information makes the answer only partially accurate with respect to the policy’s application to the specific question."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements—approval thresholds and the segregation‑of‑duties rules—exactly match the policy excerpt provided."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "Every claim in the assistant’s response is directly supported by the supplied procurement policy text; no invented or unsupported information is present."
+                },
+                "answer_relevancy": {
+                    "score": 0.75,
+                    "rationale": "The answer does address the user’s question by listing the correct segregation‑of‑duties controls, but it also adds unrelated threshold details, making the response partially relevant."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identified the applicable rule (Section 8.1) and accurately stated the retention period of 10 years, matching both the policy and the expected answer. No additional or incorrect policy requirements were introduced."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The factual claim that procurement records must be retained for 10 years is directly supported by the policy text and aligns with the expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s statement is fully supported by the supplied procurement policy excerpt, with no unsupported assumptions or invented details."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question without adding irrelevant information, providing a concise and complete answer."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identified the relevant policy section (Section 9.1) and accurately applied the rule that emergency purchases may bypass the PO requirement if retrospective approval is obtained within 5 business days and documented in the Exception Register."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements in the assistant’s answer (retrospective approval within 5 business days and documentation in the Exception Register) are consistent with the policy excerpt."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the supplied procurement policy evidence (Section 9.1). No unsupported assumptions were made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The answer directly addresses the user’s question without adding irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly references the policy requirement for quarterly reporting and escalation, but it misidentifies the number of maverick‑spend invoices (claims 9 instead of 10 retrieved, 21 total) and misstates an amount. The partial application of policy and incomplete data reduce the score."
+                },
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "The assistant incorrectly reports that only 9 invoices are maverick spend and gives the wrong EUR amount for INV‑20014 (USD 33,774.50 instead of EUR 30,545.81). These factual errors lower the score."
+                },
+                "faithfulness": {
+                    "score": 0.5,
+                    "rationale": "Most claims about required approvers and missing approvers are supported by the evidence, but the miscount of invoices and the incorrect amount for INV‑20014 are not faithful to the source data."
+                },
+                "answer_relevancy": {
+                    "score": 0.5,
+                    "rationale": "The assistant provides a list of invoices and reporting actions, but omits 12 of the 21 maverick‑spend invoices, making the answer only partially relevant to the user’s request."
+                },
+                "context_precision": {
+                    "score": 0.8,
+                    "rationale": "The assistant uses the retrieved evidence (10 invoices) to construct its answer, and the evidence is directly relevant to the question about maverick spend."
+                },
+                "context_recall": {
+                    "score": 0.5,
+                    "rationale": "The evidence contains only 10 of the 21 invoices needed to fully answer the question, so the recall of necessary information is incomplete."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.0,
+                    "rationale": "The assistant did not identify that the invoices lack approver evidence nor did it reference the policy control that prohibits payment. It merely listed the invoices without applying the procurement policy."
+                },
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "The assistant correctly listed all 25 invoices and their amounts, matching the evidence. However, it failed to state that these invoices lack approver evidence or to mention the control that should prevent payment, so the answer is only partially correct."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant (the number of invoices and their details) are directly supported by the retrieved evidence. No unsupported or fabricated statements are present."
+                },
+                "answer_relevancy": {
+                    "score": 0.0,
+                    "rationale": "The user asked which invoices lack approver evidence and what control should prevent payment. The assistant only listed invoices without addressing either part of the question, so it does not provide a relevant answer."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the 25 invoices that match the user’s query, making it highly relevant to the question."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes all 25 invoices that are required to answer the question, so no relevant information is missing."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly identifies that invoices from ON_HOLD and INACTIVE vendors must be escalated to Procurement Excellence, which aligns with policy 4.1. However, it miscounts the total number of invoices (claims 9 or 10 instead of the 29 required) and omits several relevant invoices, so the answer is only partially accurate."
+                },
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "The assistant incorrectly states the number of invoices (9/10 vs. the 29 in the ground truth) and fails to list all invoices that should be considered. These factual inaccuracies reduce the correctness of the response."
+                },
+                "faithfulness": {
+                    "score": 0.25,
+                    "rationale": "While the assistant cites some invoices that are present in the evidence, its claim that there are 9 matching records and the omission of several invoices are not supported by the retrieved evidence. Therefore the response is not fully faithful to the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 0.75,
+                    "rationale": "The answer does address the user’s question by stating that invoices from non‑ACTIVE vendors exist and that they must be escalated. The inclusion of incorrect counts and omitted invoices detracts from full relevance, but the core answer is present."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The evidence retrieved consists entirely of invoices from vendors with ON_HOLD or INACTIVE status, which is directly relevant to the question about non‑permitted vendors."
+                },
+                "context_recall": {
+                    "score": 0.5,
+                    "rationale": "The retrieved evidence contains only 10 of the 29 invoices that should be considered. Because many relevant invoices are missing, the recall of the evidence is incomplete."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.25,
+                    "rationale": "The assistant incorrectly applies the policy by claiming both credit notes are verifiable solely because they have PO numbers, approvers, and amounts. The policy requires credit notes to be matched to the original invoice and escalated if unmatched for over 90 days. Since the evidence does not provide original invoice linkage or age, the assistant’s conclusion is incorrect."
+                },
+                "factual_correctness": {
+                    "score": 0.25,
+                    "rationale": "The assistant states that both credit notes are verifiable, which contradicts the policy requirement for matching to the original invoice. This claim is factually incorrect given the policy and the evidence."
+                },
+                "faithfulness": {
+                    "score": 0.25,
+                    "rationale": "The assistant’s claim that the credit notes are verifiable is not supported by the evidence regarding the policy’s matching requirement. The evidence only shows PO numbers, approvers, and amounts, not the necessary original invoice linkage."
+                },
+                "answer_relevancy": {
+                    "score": 0.75,
+                    "rationale": "The assistant directly addresses the user’s request by discussing the credit notes and stating what cannot be verified. However, the answer is incorrect, which lowers the relevance score."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence includes the two relevant invoice records, which are directly pertinent to the user’s question."
+                },
+                "context_recall": {
+                    "score": 0.25,
+                    "rationale": "The evidence lacks information on original invoice linkage and the age of the credit notes, which are required to determine what cannot be verified per the policy. Thus, the evidence does not fully recall the necessary data."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly applies the policy threshold (Finance Director for €50,000.01–€250,000) and demonstrates that the dataset’s required_approver matches the policy. It also correctly interprets the approved_by field as user identifiers, fulfilling the comparison requirement."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements—such as the policy threshold, the required_approver values, and the presence of approved_by entries—are accurate according to the retrieved evidence."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the evidence: each listed invoice shows a non‑null approved_by and a required_approver of Finance Director, matching the policy."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request by presenting the required approver data and comparing it to the policy, with no extraneous or irrelevant information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "All retrieved records are within the €50,000–€250,000 band and contain the fields needed for the comparison, making the evidence highly relevant."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes all necessary information (required_approver and approved_by for each invoice) to answer the question, satisfying recall."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly combined the financial data (no invoices above €250,000) with the procurement policy (threshold requires CFO + Procurement Excellence review). The conclusion matches the expected answer."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claim that there are zero invoices above €250,000 is directly supported by the evidence (search result shows 0 matches)."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All statements are backed by the supplied evidence and the procurement policy excerpt. No invented or unsupported claims are present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question without adding irrelevant information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence (search_invoices result) is highly relevant to the question about invoices above €250,000."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains the necessary information (zero matches) to answer the question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly lists the five most recent GBP invoices with their EUR amounts and accurately explains that, per FIN‑POL‑014 §5.1, non‑EUR invoices must be converted using the ECB reference rate on the invoice date for reporting. This matches the expected answer and the policy text."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All invoice numbers, dates, and EUR amounts match the ground‑truth table. The policy statement about ECB conversion is also correct."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the retrieved evidence (invoice records) and the procurement policy excerpt. No invented or unsupported statements are present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request: it lists the five invoices and explains the policy requirement for EUR conversion. No irrelevant information is included."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the five invoices relevant to the question, with no unrelated records."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "All necessary information (invoice numbers, dates, amounts, EUR conversions) is present in the evidence, enabling a complete answer."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "COM20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.25,
+                    "rationale": "The assistant correctly identifies the policy rule (Section 4.1) but incorrectly states the total number of invoices flagged (15 instead of 29). The combination of correct and incorrect information results in a low overall accuracy."
+                },
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "The assistant’s claim about the policy rule is factually correct, but the claim about the number of invoices is incorrect. With one correct and one incorrect factual claim, the overall factual correctness is moderate."
+                },
+                "faithfulness": {
+                    "score": 0.5,
+                    "rationale": "The policy rule claim is directly supported by the supplied procurement policy excerpt, while the invoice count claim is not supported by any evidence. Thus the answer is partially faithful."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses both parts of the user’s question—providing a number and citing the relevant policy rule—so the answer is fully relevant."
+                },
+                "context_precision": {
+                    "score": 0.0,
+                    "rationale": "No retrieved evidence was provided, so the assistant could not demonstrate that the evidence used was relevant to the question."
+                },
+                "context_recall": {
+                    "score": 0.0,
+                    "rationale": "With an empty evidence set, the assistant could not recall any relevant information from the retrieved context."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "OOS01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "OOS20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "clarification",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL01",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly reports that there are 8 invoices with amounts below €5,000 and lists all eight invoices with their amounts. These figures match the retrieved evidence exactly, including the two negative credit notes."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "Every claim made by the assistant (number of invoices, amounts, and inclusion of credit notes) is directly supported by the evidence provided. No unsupported or fabricated information is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly addresses the user’s request for invoices below a threshold, providing the count and detailed list, which is precisely what the user asked for."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the invoice records that satisfy the query, with no irrelevant data included."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "All eight matching invoices required to answer the question are present in the retrieved evidence, ensuring complete recall."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "clarification",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL02",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.0,
+                    "rationale": "The assistant states there are 10 matching invoices, whereas the evidence and expected answer indicate 49 matching invoices. This factual claim is incorrect."
+                },
+                "faithfulness": {
+                    "score": 0.0,
+                    "rationale": "The assistant’s claim about the total number of invoices is not supported by the retrieved evidence, which shows 49 matches. Therefore the response is not faithful to the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 0.5,
+                    "rationale": "The assistant provides a list of invoices from Spanish vendors, which is relevant to the question. However, it incorrectly reports the total count and only returns 10 of 49 invoices, making the answer incomplete."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "All retrieved evidence consists of invoices from Spanish vendors, directly matching the user’s request."
+                },
+                "context_recall": {
+                    "score": 0.2,
+                    "rationale": "The evidence only includes 10 of the 49 invoices that match the query, so it fails to recall the full set of relevant records."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL03",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly merged the financial data (10 invoices with missing PO references) with the procurement policy, accurately applying the threshold and flagging requirements. No policy misinterpretation or omission is present."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements—invoice amounts, missing PO status, policy wording—match the supplied evidence and the policy text. No incorrect or fabricated facts are present."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "Every claim in the answer is directly supported by the retrieved evidence or the policy document. The assistant did not add unsupported information."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request to list invoices with missing PO references and explain the relevant policy requirements, with no irrelevant content."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the 10 relevant invoices, all of which are pertinent to the question. No unrelated records were included."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all necessary information (the 10 invoices) to answer the question fully, and the assistant used all of it."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL04",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s spend figures for BioReagent Direct (EUR 1,131,552.52) and PharmaPrint Studios (EUR 1,084,833.66) exactly match the values in the retrieved evidence."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant are directly supported by the evidence provided; no unsupported or invented information is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses the user’s implicit request to compare the net EUR spend of the two vendors, providing the precise amounts."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence contains a vendor‑by‑vendor spend breakdown that is highly relevant to the question about BioReagent Direct and PharmaPrint Studios."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes all necessary information (exact spend totals) to answer the user’s question, ensuring complete recall."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "clarification",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL05",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly states that there are 26 invoices for Q4 2025, matching the evidence’s `total_matches`. All invoice numbers, dates, and EUR amounts in the table exactly match the corresponding fields in the evidence. No factual inaccuracies are present."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "Every claim made by the assistant is directly supported by the evidence. The count of invoices, the list of returned records, and each amount are all verifiable from the retrieved `search_invoices` result."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The user’s query was simply ‘Q4 2025’. The assistant’s response identifies the request, provides the correct count, and supplies the relevant invoice data, fully addressing the question."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of invoice records for Q4 2025, which is precisely the information needed to answer the user’s query."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains the total number of matching invoices (26) and the 10 records that were returned, giving the assistant all the information required to answer the question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL06",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly states that there are 17 invoices from the inactive vendor and lists 10 retrieved invoices with amounts that exactly match the evidence. No factual inaccuracies are present."
+                },
+                "faithfulness": {
+                    "score": 0.75,
+                    "rationale": "All factual claims about the number of invoices, the retrieved records, and the amounts are supported by the evidence. However, the statement that the retrieval is \"as per the procurement policy (section 4.1)\" is unsupported because the procurement policy is not provided."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request for invoices from inactive vendors, providing the required count and a representative list."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the relevant invoice data for the inactive vendor, making it highly precise to the query."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence includes the total match count and the retrieved invoices, which contain all information needed to answer the user’s question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL07",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identifies section 4.1 of the procurement policy, states that payments may only be made to ACTIVE vendors, and that invoices from ON_HOLD vendors must be escalated to Procurement Excellence. This matches the expected answer and the policy text."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements made by the assistant (ACTIVE vendor requirement, ON_HOLD escalation) are accurate according to the policy excerpt."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the policy excerpt, specifically section 4.1, and no unsupported assumptions are introduced."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question about an invoice from an ON_HOLD vendor, providing the correct policy guidance without irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL08",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly identified the relevant approval threshold (50,000.01 – 250,000 EUR) from Section 3 of the policy and applied it to the €75,000 invoice, stating that Finance Director approval is required. The answer is complete and contains no invented or omitted policy requirements."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The factual claim that a €75,000 invoice requires Finance Director approval aligns exactly with the policy’s threshold table. No inaccuracies are present."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s statement is directly supported by the policy excerpt provided. No unsupported assumptions or hallucinations are present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly addresses the user’s query (the approval requirement for a €75,000 invoice) and provides the precise information requested."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL09",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly states the threshold value (EUR 1,000) but omits the key policy requirement that purchases of €1,000 or above must have an approved PO before work or shipment. The answer is therefore incomplete with respect to the policy."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The factual claim that the PO requirement threshold is EUR 1,000 aligns exactly with the policy excerpt."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s statement is directly supported by the policy text provided; no unsupported assumptions are made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly addresses the user’s query about the PO requirement threshold."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL10",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly reports the total number of matching invoices (73) and the amounts for the invoices it lists. However, the top‑5 list is inaccurate: it includes INV‑20007 (72,692.20 EUR) instead of the correct fifth‑largest invoice, INV‑20022 (78,818.79 EUR). This factual error reduces the overall correctness."
+                },
+                "faithfulness": {
+                    "score": 0.5,
+                    "rationale": "Most statements are supported by the retrieved evidence (total matches, number of retrieved records, individual amounts). The incorrect top‑5 ordering is not supported by the evidence, so the answer is only partially faithful."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant directly addresses the user’s request to list invoices above €50,000 in EUR, providing a clear list and summary."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "All retrieved records are invoices with EUR amounts above €50,000, which is precisely the information the user asked for."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains the 10 invoices that the assistant reports, and it also indicates that there are 73 total matches. Since the assistant’s answer only requires the 10 retrieved records, the evidence provides all necessary information for the answer."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL11",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.0,
+                    "rationale": "The assistant reports totals of €526,332.77 for BioReagent Direct and €174,501.93 for ClinSupply Iberia S.L., whereas the expected answer states €1,131,552.52 and €977,202.81 respectively. The numbers are completely inconsistent with the expected values."
+                },
+                "faithfulness": {
+                    "score": 0.0,
+                    "rationale": "The assistant’s figures are not derived from the provided evidence. Summing the amounts in the evidence yields €440,635.58 for BioReagent Direct and €186,314.08 for ClinSupply Iberia S.L., not the figures the assistant presents. Thus the claims are unsupported by the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 0.25,
+                    "rationale": "The assistant attempts to answer the question by comparing the two vendors, but the comparison is based on incorrect totals and does not provide the net spend figures that the user (or the expected answer) appears to be seeking. The response is partially relevant but ultimately incorrect."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists of invoices for the two vendors in question, which are directly relevant to the user’s query."
+                },
+                "context_recall": {
+                    "score": 0.25,
+                    "rationale": "Only 10 of the 40 matching invoices were retrieved, so the evidence set is incomplete for calculating the full net spend. The necessary information to produce the expected totals is missing."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL12",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s invoice counts and net spend figures match exactly the numbers provided in the retrieved evidence."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims in the assistant’s response are directly supported by the evidence; no invented or unsupported data is present."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly answers the user’s request for monthly invoice counts and net spend, providing the complete set of requested information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence is precisely the monthly breakdown needed to answer the question, with no irrelevant data."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all months and corresponding figures required, and the assistant’s answer includes every piece of that information."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL13",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly states that there are 24 invoices originally issued in USD, matching the evidence’s `total_matches`. The table lists 10 invoices with EUR amounts that exactly match the `EUR_amount` fields in the evidence. No factual inaccuracies are present."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant are directly supported by the retrieved evidence. The count of invoices and the details in the table are taken verbatim from the evidence."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s response directly addresses the user’s request for invoices originally issued in USD, providing the total count and a sample of the matching invoices."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence (search_invoices result) is precisely what is needed to answer the question—information about invoices in USD. No irrelevant data was included."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains all necessary information: the total number of USD invoices and the details of the retrieved subset, enabling a complete answer to the user’s query."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL14",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.0,
+                    "rationale": "The assistant states that no invoices for \"Crown Travel Partners\" were found, whereas the expected answer indicates there are 12 invoices with a net spend of €415,550.83. This directly contradicts the ground truth."
+                },
+                "faithfulness": {
+                    "score": 0.0,
+                    "rationale": "The assistant makes a claim that is not supported by any retrieved evidence (the evidence list is empty) and no procurement policy is provided. Therefore the claim is not faithful to the supplied materials."
+                },
+                "answer_relevancy": {
+                    "score": 0.0,
+                    "rationale": "The user asked for information about \"Crown Travel Partners\". The assistant only says it cannot find invoices, without providing the requested vendor status, invoice count, or spend. Thus the answer does not adequately address the question."
+                },
+                "context_precision": {
+                    "score": 0.0,
+                    "rationale": "No evidence was retrieved, so there is no relevant context to evaluate. The precision of the context is therefore zero."
+                },
+                "context_recall": {
+                    "score": 0.0,
+                    "rationale": "The retrieved evidence set is empty, meaning it contains none of the information needed to answer the question. The recall of relevant context is zero."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL15",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.0,
+                    "rationale": "The assistant neither provided the required financial details for INV‑20010 nor applied the procurement policy to those details. It failed to combine data and policy, resulting in an incorrect conclusion."
+                },
+                "factual_correctness": {
+                    "score": 0.0,
+                    "rationale": "The assistant made no factual statement about the invoice amount, PO status, or policy requirements. Consequently, it cannot be considered factually correct relative to the expected answer."
+                },
+                "faithfulness": {
+                    "score": 0.0,
+                    "rationale": "The assistant claimed it could not determine compliance based on the evidence, yet no evidence was provided. The statement is unsupported and not faithful to the supplied materials."
+                },
+                "answer_relevancy": {
+                    "score": 0.0,
+                    "rationale": "The response does not address the user’s request for information about INV‑20010; it merely asks for more data. It therefore fails to answer the question."
+                },
+                "context_precision": {
+                    "score": 0.0,
+                    "rationale": "No evidence was retrieved, so there is no relevant context to evaluate. The precision of the context is effectively zero."
+                },
+                "context_recall": {
+                    "score": 0.0,
+                    "rationale": "The retrieved evidence set is empty, meaning it contains none of the information needed to answer the question. Recall is therefore zero."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL16",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "policy_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant reproduced the exact approval thresholds table from the procurement policy, correctly identifying all four bands and their corresponding approvers. No policy rules were omitted or misinterpreted."
+                },
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements about the approval thresholds match the policy text. There are no inaccuracies or invented figures."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the supplied procurement policy excerpt, which contains the same table. No unsupported assumptions were made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request for the approval thresholds, providing the complete table without irrelevant information."
+                },
+                "context_precision": null,
+                "context_recall": null
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL17",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 0.5,
+                    "rationale": "The assistant correctly lists most invoice attributes but incorrectly reports the amount as \"-€25,340.67 (as EUR_amount)\" while omitting the USD amount of –29,534.55. This factual omission reduces accuracy."
+                },
+                "faithfulness": {
+                    "score": 0.5,
+                    "rationale": "The assistant’s claims are partially supported by the evidence: it correctly cites the EUR_amount and other fields, but it fails to include the USD amount present in the evidence, indicating incomplete faithfulness."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s request for details on invoice INV‑20096, providing a comprehensive set of relevant information."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "All retrieved evidence pertains to the requested invoice and is used appropriately in the answer."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence contains all necessary data to answer the question, and the assistant references the key fields from that evidence."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL18",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "applicable_metrics": [
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": null,
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly states that 49 invoices match the search criteria for Spain, which matches the evidence’s `total_matches` field of 49. It also correctly reports 10 retrieved records, matching `returned_records`. No factual inaccuracies are present."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "All claims made by the assistant (total invoices, number of retrieved records, and the details of the 10 invoices) are directly supported by the retrieved evidence. The table matches the evidence entries exactly."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The user’s query was simply “Country: Spain.” The assistant’s response directly addresses this by providing the count of Spanish invoices and a sample list, which is precisely what the user would expect."
+                },
+                "context_precision": {
+                    "score": 1.0,
+                    "rationale": "The retrieved evidence consists solely of the search results for invoices in Spain, which is directly relevant to the user’s request."
+                },
+                "context_recall": {
+                    "score": 1.0,
+                    "rationale": "The evidence contains the necessary information (total count and sample records) to answer the user’s question, so the recall is complete."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL19",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 0.0,
+                    "rationale": "The assistant fails to apply the procurement policy to the specific invoice. It does not mention the vendor’s ON_HOLD status or the required escalation to Procurement Excellence, which are critical to determining payment eligibility. Therefore the answer does not correctly combine financial data with policy."
+                },
+                "factual_correctness": {
+                    "score": 0.0,
+                    "rationale": "The assistant states that vendor status and invoice amount are unknown, contradicting the expected answer that the vendor is ON_HOLD. This is a factual inaccuracy."
+                },
+                "faithfulness": {
+                    "score": 0.0,
+                    "rationale": "The assistant’s claims are not supported by any supplied evidence or policy excerpts. It makes assumptions about missing data rather than citing the policy or evidence."
+                },
+                "answer_relevancy": {
+                    "score": 0.0,
+                    "rationale": "The response does not address the user’s request to determine payment eligibility for INV-20002. It instead offers a generic statement about missing information."
+                },
+                "context_precision": {
+                    "score": 0.0,
+                    "rationale": "No evidence was retrieved, so there is no relevant context to evaluate. The lack of evidence makes the precision score zero."
+                },
+                "context_recall": {
+                    "score": 0.0,
+                    "rationale": "The retrieved evidence set is empty, missing all necessary information (vendor status, invoice amount, etc.) required to answer the question."
+                }
+            },
+            "status": "completed",
+            "error": null
+        },
+        {
+            "case_id": "CL20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [],
+            "evaluation": null,
+            "status": "not_applicable",
+            "error": null
+        },
+        {
+            "case_id": "CL20",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "policy",
+            "applicable_metrics": [
+                "both_answer_accuracy",
+                "factual_correctness",
+                "faithfulness",
+                "answer_relevancy",
+                "context_precision",
+                "context_recall"
+            ],
+            "evaluation": {
+                "policy_answer_accuracy": null,
+                "both_answer_accuracy": {
+                    "score": 1.0,
+                    "rationale": "The assistant correctly applies the policy threshold (EUR 1,000) to the invoice and notes the absence of a PO, matching the expected answer."
+                },
+                "factual_correctness": {
+                    "score": 1.0,
+                    "rationale": "All factual statements (policy threshold, invoice value, PO requirement) are accurate per the supplied policy and expected answer."
+                },
+                "faithfulness": {
+                    "score": 1.0,
+                    "rationale": "The assistant’s claims are directly supported by the procurement policy text provided; no unsupported assumptions were made."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "rationale": "The response directly addresses the user’s question without irrelevant information."
+                },
+                "context_precision": {
+                    "score": 0.0,
+                    "rationale": "No retrieved evidence was provided, so precision of evidence relevance cannot be assessed."
+                },
+                "context_recall": {
+                    "score": 0.0,
+                    "rationale": "Without retrieved evidence, it is impossible to determine whether the necessary information was recalled."
+                }
+            },
+            "status": "completed",
+            "error": null
+        }
+    ]
+}

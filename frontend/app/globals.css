@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f7f9;
+  --foreground: #29212a;
+  --primary: #830051;
+  --primary-dark: #570038;
+  --accent: #efab00;
+  --border: #ebe7ec;
+  --muted: #817984;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: #f1dce9;
+  color: #570038;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d0da;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b9adbc;
+}
+
+@layer components {
+  /* Cards */
+  .card {
+    @apply rounded-xl border border-gray-200 bg-white shadow-card;
+  }
+
+  .card-hover {
+    @apply transition-all duration-200 hover:-translate-y-0.5 hover:shadow-elevated;
+  }
+
+  /* Typography */
+  .page-title {
+    @apply text-2xl font-semibold tracking-tight text-gray-900;
+  }
+
+  .page-description {
+    @apply mt-1 text-sm leading-6 text-gray-500;
+  }
+
+  .section-title {
+    @apply text-base font-semibold text-gray-900;
+  }
+
+  /* Buttons */
+  .primary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-az-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-az-700 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-az-200 hover:bg-az-50 hover:text-az-700;
+  }
+
+  /* Form elements */
+  .input-field {
+    @apply w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 outline-none transition-all placeholder:text-gray-400 focus:border-az-500 focus:ring-2 focus:ring-az-100;
+  }
+
+  /* Labels */
+  .status-badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium;
+  }
+
+  .status-success {
+    @apply bg-green-50 text-green-700;
+  }
+
+  .status-warning {
+    @apply bg-amber-50 text-amber-700;
+  }
+
+  .status-danger {
+    @apply bg-red-50 text-red-700;
+  }
+}

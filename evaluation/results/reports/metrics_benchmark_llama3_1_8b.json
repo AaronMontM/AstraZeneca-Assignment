@@ -1,0 +1,5206 @@
+{
+    "metadata": {
+        "timestamp": "2026-11-06T20:49:41.332732",
+        "api_url": "http://localhost:8000",
+        "dataset": "/home/aaron/Documentos/repos/AstraZeneca/AstraZeneca-Assignment/evaluation/datasets/ground_truth.xlsx",
+        "total_cases": 100,
+        "successful_initial_requests": 97,
+        "total_follow_up_requests": 20,
+        "successful_follow_up_requests": 20,
+        "total_elapsed_seconds": 432.764
+    },
+    "benchmark_summary": {
+        "total_cases": 100,
+        "initial_turns": 100,
+        "follow_up_turns": 20
+    },
+    "functional_metrics": {
+        "route_accuracy": {
+            "initial": {
+                "correct": 78,
+                "total": 100,
+                "accuracy": 0.78,
+                "by_expected_route": {
+                    "both": {
+                        "correct": 15,
+                        "total": 20,
+                        "accuracy": 0.75
+                    },
+                    "clarification": {
+                        "correct": 3,
+                        "total": 20,
+                        "accuracy": 0.15
+                    },
+                    "data": {
+                        "correct": 20,
+                        "total": 20,
+                        "accuracy": 1.0
+                    },
+                    "out_of_scope": {
+                        "correct": 20,
+                        "total": 20,
+                        "accuracy": 1.0
+                    },
+                    "policy": {
+                        "correct": 20,
+                        "total": 20,
+                        "accuracy": 1.0
+                    }
+                }
+            },
+            "follow_up": {
+                "correct": 17,
+                "total": 20,
+                "accuracy": 0.85,
+                "by_expected_route": {
+                    "both": {
+                        "correct": 2,
+                        "total": 4,
+                        "accuracy": 0.5
+                    },
+                    "data": {
+                        "correct": 12,
+                        "total": 12,
+                        "accuracy": 1.0
+                    },
+                    "policy": {
+                        "correct": 3,
+                        "total": 4,
+                        "accuracy": 0.75
+                    }
+                }
+            },
+            "overall": {
+                "correct": 95,
+                "total": 120,
+                "accuracy": 0.7916666666666666,
+                "by_expected_route": {
+                    "both": {
+                        "correct": 17,
+                        "total": 24,
+                        "accuracy": 0.7083333333333334
+                    },
+                    "clarification": {
+                        "correct": 3,
+                        "total": 20,
+                        "accuracy": 0.15
+                    },
+                    "data": {
+                        "correct": 32,
+                        "total": 32,
+                        "accuracy": 1.0
+                    },
+                    "out_of_scope": {
+                        "correct": 20,
+                        "total": 20,
+                        "accuracy": 1.0
+                    },
+                    "policy": {
+                        "correct": 23,
+                        "total": 24,
+                        "accuracy": 0.9583333333333334
+                    }
+                }
+            }
+        },
+        "data_retrieval_accuracy": {
+            "correct_rows": 256,
+            "total_rows": 378,
+            "accuracy": 0.6772486772486772,
+            "evaluated_cases": 34,
+            "not_applicable_cases": 86,
+            "case_results": [
+                {
+                    "case_id": "INV01",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 5,
+                    "total_rows": 5,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV02",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": [
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV03",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 3,
+                    "total_rows": 3,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV04",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 12,
+                    "total_rows": 12,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV05",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 21,
+                    "total_rows": 21,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV06",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 25,
+                    "total_rows": 25,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV07",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 2,
+                    "total_rows": 2,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV08",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 1,
+                    "total_rows": 10,
+                    "accuracy": 0.1,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV09",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 1,
+                    "total_rows": 1,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV10",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 1,
+                    "total_rows": 1,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV11",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 3,
+                    "total_rows": 3,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV12",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 5,
+                    "total_rows": 5,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV13",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "INV14",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "INV15",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "INV16",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 21,
+                    "total_rows": 21,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV17",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 10,
+                    "total_rows": 25,
+                    "accuracy": 0.4,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 5
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV18",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": [
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV19",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": [
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        }
+                    ]
+                },
+                {
+                    "case_id": "INV20",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 2,
+                    "total_rows": 2,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 1,
+                            "compared_fields": 1
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 1,
+                            "compared_fields": 1
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN01",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 5,
+                    "total_rows": 5,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN02",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 3,
+                    "total_rows": 3,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN03",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 1,
+                    "total_rows": 3,
+                    "accuracy": 0.3333333333333333,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 1
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 1
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 1,
+                            "compared_fields": 1
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN04",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 8,
+                    "total_rows": 8,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN05",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 7,
+                    "total_rows": 7,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN06",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 9,
+                    "total_rows": 9,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN07",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 5,
+                    "total_rows": 5,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN08",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 10,
+                    "total_rows": 10,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN09",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "VEN10",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "VEN11",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "VEN12",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "VEN13",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "VEN14",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 17,
+                    "total_rows": 29,
+                    "accuracy": 0.5862068965517241,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN15",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 3,
+                    "total_rows": 3,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 1,
+                            "compared_fields": 1
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 1,
+                            "compared_fields": 1
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 1,
+                            "compared_fields": 1
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN16",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 1,
+                    "total_rows": 1,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN17",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 10,
+                    "total_rows": 12,
+                    "accuracy": 0.8333333333333334,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 4
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN18",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 2,
+                    "total_rows": 2,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 1,
+                            "compared_fields": 1
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 1,
+                            "compared_fields": 1
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN19",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 10,
+                    "total_rows": 17,
+                    "accuracy": 0.5882352941176471,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        }
+                    ]
+                },
+                {
+                    "case_id": "VEN20",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 2,
+                    "total_rows": 2,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 3,
+                            "compared_fields": 3
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        }
+                    ]
+                },
+                {
+                    "case_id": "COM01",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM02",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM03",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM04",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM05",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM06",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM07",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM08",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM09",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM10",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM11",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM12",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM13",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 10,
+                    "total_rows": 21,
+                    "accuracy": 0.47619047619047616,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 6,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 4,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 1,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 6
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 3,
+                            "compared_fields": 6
+                        }
+                    ]
+                },
+                {
+                    "case_id": "COM14",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 25,
+                    "total_rows": 25,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        }
+                    ]
+                },
+                {
+                    "case_id": "COM15",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 1,
+                    "total_rows": 2,
+                    "accuracy": 0.5,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 0,
+                            "compared_fields": 2
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 2,
+                            "compared_fields": 2
+                        }
+                    ]
+                },
+                {
+                    "case_id": "COM16",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": [
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        },
+                        {
+                            "evaluated": false,
+                            "correct": null,
+                            "matched_fields": 0,
+                            "compared_fields": 0
+                        }
+                    ]
+                },
+                {
+                    "case_id": "COM17",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 10,
+                    "total_rows": 73,
+                    "accuracy": 0.136986301369863,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 4,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": false,
+                            "matched_fields": 2,
+                            "compared_fields": 4
+                        }
+                    ]
+                },
+                {
+                    "case_id": "COM18",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "COM19",
+                    "turn_type": "initial",
+                    "status": "completed",
+                    "correct_rows": 5,
+                    "total_rows": 5,
+                    "accuracy": 1.0,
+                    "row_results": [
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        },
+                        {
+                            "evaluated": true,
+                            "correct": true,
+                            "matched_fields": 5,
+                            "compared_fields": 5
+                        }
+                    ]
+                },
+                {
+                    "case_id": "COM20",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS01",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS02",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS03",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS04",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS05",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS06",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS07",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS08",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS09",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS10",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS11",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS12",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS13",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS14",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS15",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS16",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS17",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS18",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS19",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "OOS20",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL01",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL01",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL02",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL02",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL03",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL03",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL04",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL04",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL05",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL05",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL06",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL06",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL07",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL07",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL08",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL08",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL09",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL09",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL10",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL10",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL11",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL11",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL12",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL12",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL13",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL13",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL14",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL14",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL15",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL15",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL16",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL16",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL17",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL17",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL18",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL18",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL19",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL19",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL20",
+                    "turn_type": "initial",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                },
+                {
+                    "case_id": "CL20",
+                    "turn_type": "follow_up",
+                    "status": "not_applicable",
+                    "correct_rows": 0,
+                    "total_rows": 0,
+                    "accuracy": null,
+                    "row_results": []
+                }
+            ]
+        },
+        "clarification_accuracy": {
+            "correct": 3,
+            "total": 20,
+            "accuracy": 0.15,
+            "deterministic_accuracy": 0.15,
+            "semantic_accuracy": null,
+            "combined_accuracy": null,
+            "note": "The semantic component must be supplied by the LLM Judge. Combined accuracy is not calculated until that evaluation is available."
+        }
+    },
+    "performance_metrics": {
+        "successful_requests": 120,
+        "total_requests": 120,
+        "http_success_rate": 1.0,
+        "average_latency_seconds": 3.6861666666666664,
+        "total_benchmark_time_seconds": 432.764
+    },
+    "turn_results": [
+        {
+            "case_id": "INV01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 10.144
+        },
+        {
+            "case_id": "INV02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.045
+        },
+        {
+            "case_id": "INV03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.031
+        },
+        {
+            "case_id": "INV04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 8.712
+        },
+        {
+            "case_id": "INV05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.489
+        },
+        {
+            "case_id": "INV06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.299
+        },
+        {
+            "case_id": "INV07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.075
+        },
+        {
+            "case_id": "INV08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.203
+        },
+        {
+            "case_id": "INV09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.28
+        },
+        {
+            "case_id": "INV10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.31
+        },
+        {
+            "case_id": "INV11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.514
+        },
+        {
+            "case_id": "INV12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.391
+        },
+        {
+            "case_id": "INV13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.759
+        },
+        {
+            "case_id": "INV14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.277
+        },
+        {
+            "case_id": "INV15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.683
+        },
+        {
+            "case_id": "INV16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.789
+        },
+        {
+            "case_id": "INV17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.455
+        },
+        {
+            "case_id": "INV18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.877
+        },
+        {
+            "case_id": "INV19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.519
+        },
+        {
+            "case_id": "INV20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 8.026
+        },
+        {
+            "case_id": "VEN01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 9.009
+        },
+        {
+            "case_id": "VEN02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 12.374
+        },
+        {
+            "case_id": "VEN03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 6.71
+        },
+        {
+            "case_id": "VEN04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 14.977
+        },
+        {
+            "case_id": "VEN05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 6.603
+        },
+        {
+            "case_id": "VEN06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.554
+        },
+        {
+            "case_id": "VEN07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 4.925
+        },
+        {
+            "case_id": "VEN08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 9.262
+        },
+        {
+            "case_id": "VEN09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.81
+        },
+        {
+            "case_id": "VEN10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.778
+        },
+        {
+            "case_id": "VEN11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.598
+        },
+        {
+            "case_id": "VEN12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.501
+        },
+        {
+            "case_id": "VEN13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.051
+        },
+        {
+            "case_id": "VEN14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.647
+        },
+        {
+            "case_id": "VEN15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 11.978
+        },
+        {
+            "case_id": "VEN16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 6.902
+        },
+        {
+            "case_id": "VEN17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 6.045
+        },
+        {
+            "case_id": "VEN18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.526
+        },
+        {
+            "case_id": "VEN19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.498
+        },
+        {
+            "case_id": "VEN20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 6.191
+        },
+        {
+            "case_id": "COM01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.407
+        },
+        {
+            "case_id": "COM02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.094
+        },
+        {
+            "case_id": "COM03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.212
+        },
+        {
+            "case_id": "COM04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.22
+        },
+        {
+            "case_id": "COM05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.552
+        },
+        {
+            "case_id": "COM06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.141
+        },
+        {
+            "case_id": "COM07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.85
+        },
+        {
+            "case_id": "COM08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.648
+        },
+        {
+            "case_id": "COM09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.521
+        },
+        {
+            "case_id": "COM10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.584
+        },
+        {
+            "case_id": "COM11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.028
+        },
+        {
+            "case_id": "COM12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.359
+        },
+        {
+            "case_id": "COM13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.492
+        },
+        {
+            "case_id": "COM14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.252
+        },
+        {
+            "case_id": "COM15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.254
+        },
+        {
+            "case_id": "COM16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 4.173
+        },
+        {
+            "case_id": "COM17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 9.052
+        },
+        {
+            "case_id": "COM18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.715
+        },
+        {
+            "case_id": "COM19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 7.087
+        },
+        {
+            "case_id": "COM20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.095
+        },
+        {
+            "case_id": "OOS01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.562
+        },
+        {
+            "case_id": "OOS02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.858
+        },
+        {
+            "case_id": "OOS03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.828
+        },
+        {
+            "case_id": "OOS04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.86
+        },
+        {
+            "case_id": "OOS05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.758
+        },
+        {
+            "case_id": "OOS06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.891
+        },
+        {
+            "case_id": "OOS07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.752
+        },
+        {
+            "case_id": "OOS08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.844
+        },
+        {
+            "case_id": "OOS09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.984
+        },
+        {
+            "case_id": "OOS10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.852
+        },
+        {
+            "case_id": "OOS11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.93
+        },
+        {
+            "case_id": "OOS12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.862
+        },
+        {
+            "case_id": "OOS13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.79
+        },
+        {
+            "case_id": "OOS14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.87
+        },
+        {
+            "case_id": "OOS15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.864
+        },
+        {
+            "case_id": "OOS16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.902
+        },
+        {
+            "case_id": "OOS17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.847
+        },
+        {
+            "case_id": "OOS18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.852
+        },
+        {
+            "case_id": "OOS19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.903
+        },
+        {
+            "case_id": "OOS20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "out_of_scope"
+            ],
+            "actual_route": "out_of_scope",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 0.847
+        },
+        {
+            "case_id": "CL01",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 6.051
+        },
+        {
+            "case_id": "CL02",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "clarification",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.149
+        },
+        {
+            "case_id": "CL03",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.549
+        },
+        {
+            "case_id": "CL04",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.807
+        },
+        {
+            "case_id": "CL05",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.975
+        },
+        {
+            "case_id": "CL06",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 4.578
+        },
+        {
+            "case_id": "CL07",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.526
+        },
+        {
+            "case_id": "CL08",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.032
+        },
+        {
+            "case_id": "CL09",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 7.112
+        },
+        {
+            "case_id": "CL10",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.737
+        },
+        {
+            "case_id": "CL11",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 7.471
+        },
+        {
+            "case_id": "CL12",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 6.105
+        },
+        {
+            "case_id": "CL13",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.492
+        },
+        {
+            "case_id": "CL14",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.513
+        },
+        {
+            "case_id": "CL15",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.207
+        },
+        {
+            "case_id": "CL16",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.864
+        },
+        {
+            "case_id": "CL17",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "clarification",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.243
+        },
+        {
+            "case_id": "CL18",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "clarification",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.15
+        },
+        {
+            "case_id": "CL19",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.596
+        },
+        {
+            "case_id": "CL20",
+            "turn_type": "initial",
+            "expected_routes": [
+                "clarification"
+            ],
+            "actual_route": "policy",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.766
+        },
+        {
+            "case_id": "CL01",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.429
+        },
+        {
+            "case_id": "CL02",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.283
+        },
+        {
+            "case_id": "CL03",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 8.805
+        },
+        {
+            "case_id": "CL04",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.913
+        },
+        {
+            "case_id": "CL05",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.633
+        },
+        {
+            "case_id": "CL06",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 4.871
+        },
+        {
+            "case_id": "CL07",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 4.073
+        },
+        {
+            "case_id": "CL08",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 1.734
+        },
+        {
+            "case_id": "CL09",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.66
+        },
+        {
+            "case_id": "CL10",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.033
+        },
+        {
+            "case_id": "CL11",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.697
+        },
+        {
+            "case_id": "CL12",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.784
+        },
+        {
+            "case_id": "CL13",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.675
+        },
+        {
+            "case_id": "CL14",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.312
+        },
+        {
+            "case_id": "CL15",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.424
+        },
+        {
+            "case_id": "CL16",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "policy"
+            ],
+            "actual_route": "policy",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 2.749
+        },
+        {
+            "case_id": "CL17",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.088
+        },
+        {
+            "case_id": "CL18",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "data"
+            ],
+            "actual_route": "data",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 5.831
+        },
+        {
+            "case_id": "CL19",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "data",
+            "route_correct": false,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 3.327
+        },
+        {
+            "case_id": "CL20",
+            "turn_type": "follow_up",
+            "expected_routes": [
+                "both"
+            ],
+            "actual_route": "both",
+            "route_correct": true,
+            "success": true,
+            "status_code": 200,
+            "elapsed_seconds": 6.687
+        }
+    ]
+}

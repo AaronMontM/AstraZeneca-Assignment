@@ -1,0 +1,251 @@
+{
+    "metadata": {
+        "generated_at": "2026-11-07T00:36:42.496486+00:00",
+        "models_compared": 4,
+        "judge_model_filter": null,
+        "metrics_order": [
+            "route_accuracy",
+            "data_retrieval_accuracy",
+            "policy_answer_accuracy",
+            "both_answer_accuracy",
+            "clarification_accuracy",
+            "factual_correctness",
+            "faithfulness",
+            "answer_relevancy",
+            "context_precision",
+            "context_recall",
+            "average_latency_seconds"
+        ],
+        "clarification_note": "Clarification accuracy uses deterministic routing accuracy when semantic and combined scores are unavailable."
+    },
+    "models": [
+        {
+            "model": "gemma4_12b",
+            "benchmark_file": "metrics_benchmark_gemma4_12b.json",
+            "judge_file": "judged_benchmark_gemma4_12b_gpt-oss_20b.json",
+            "judge_model": "gpt-oss:20b",
+            "clarification_evaluation": {
+                "deterministic_accuracy": 0.85,
+                "semantic_accuracy": null,
+                "combined_accuracy": null
+            },
+            "metrics": {
+                "route_accuracy": {
+                    "score": 0.9166666666666666,
+                    "evaluated": null
+                },
+                "data_retrieval_accuracy": {
+                    "score": 0.7637231503579952,
+                    "evaluated": null
+                },
+                "policy_answer_accuracy": {
+                    "score": 0.9895833333333334,
+                    "evaluated": 24
+                },
+                "both_answer_accuracy": {
+                    "score": 0.7291666666666666,
+                    "evaluated": 24
+                },
+                "clarification_accuracy": {
+                    "score": 0.85,
+                    "evaluated": null
+                },
+                "factual_correctness": {
+                    "score": 0.88125,
+                    "evaluated": 80
+                },
+                "faithfulness": {
+                    "score": 0.9081250000000001,
+                    "evaluated": 80
+                },
+                "answer_relevancy": {
+                    "score": 0.8875,
+                    "evaluated": 80
+                },
+                "context_precision": {
+                    "score": 0.8892857142857142,
+                    "evaluated": 56
+                },
+                "context_recall": {
+                    "score": 0.8303571428571429,
+                    "evaluated": 56
+                },
+                "average_latency_seconds": {
+                    "score": 14.7835,
+                    "evaluated": null
+                }
+            }
+        },
+        {
+            "model": "llama3_1_8b",
+            "benchmark_file": "metrics_benchmark_llama3_1_8b.json",
+            "judge_file": "judged_benchmark_llama3_1_8b_gpt-oss_20b.json",
+            "judge_model": "gpt-oss:20b",
+            "clarification_evaluation": {
+                "deterministic_accuracy": 0.15,
+                "semantic_accuracy": null,
+                "combined_accuracy": null
+            },
+            "metrics": {
+                "route_accuracy": {
+                    "score": 0.7916666666666666,
+                    "evaluated": null
+                },
+                "data_retrieval_accuracy": {
+                    "score": 0.6772486772486772,
+                    "evaluated": null
+                },
+                "policy_answer_accuracy": {
+                    "score": 0.9270833333333334,
+                    "evaluated": 24
+                },
+                "both_answer_accuracy": {
+                    "score": 0.6354166666666666,
+                    "evaluated": 24
+                },
+                "clarification_accuracy": {
+                    "score": 0.15,
+                    "evaluated": null
+                },
+                "factual_correctness": {
+                    "score": 0.696875,
+                    "evaluated": 80
+                },
+                "faithfulness": {
+                    "score": 0.75,
+                    "evaluated": 80
+                },
+                "answer_relevancy": {
+                    "score": 0.80625,
+                    "evaluated": 80
+                },
+                "context_precision": {
+                    "score": 0.8964285714285714,
+                    "evaluated": 56
+                },
+                "context_recall": {
+                    "score": 0.7616071428571428,
+                    "evaluated": 56
+                },
+                "average_latency_seconds": {
+                    "score": 3.6861666666666664,
+                    "evaluated": null
+                }
+            }
+        },
+        {
+            "model": "mistral-nemo_12b",
+            "benchmark_file": "metrics_benchmark_mistral-nemo_12b.json",
+            "judge_file": "judged_benchmark_mistral-nemo_12b_gpt-oss_20b.json",
+            "judge_model": "gpt-oss:20b",
+            "clarification_evaluation": {
+                "deterministic_accuracy": 0.15,
+                "semantic_accuracy": null,
+                "combined_accuracy": null
+            },
+            "metrics": {
+                "route_accuracy": {
+                    "score": 0.6333333333333333,
+                    "evaluated": null
+                },
+                "data_retrieval_accuracy": {
+                    "score": 0.766109785202864,
+                    "evaluated": null
+                },
+                "policy_answer_accuracy": {
+                    "score": 0.8958333333333334,
+                    "evaluated": 24
+                },
+                "both_answer_accuracy": {
+                    "score": 0.5625,
+                    "evaluated": 24
+                },
+                "clarification_accuracy": {
+                    "score": 0.15,
+                    "evaluated": null
+                },
+                "factual_correctness": {
+                    "score": 0.753125,
+                    "evaluated": 80
+                },
+                "faithfulness": {
+                    "score": 0.8106249999999999,
+                    "evaluated": 80
+                },
+                "answer_relevancy": {
+                    "score": 0.865625,
+                    "evaluated": 80
+                },
+                "context_precision": {
+                    "score": 0.875,
+                    "evaluated": 56
+                },
+                "context_recall": {
+                    "score": 0.7607142857142858,
+                    "evaluated": 56
+                },
+                "average_latency_seconds": {
+                    "score": 12.167683333333335,
+                    "evaluated": null
+                }
+            }
+        },
+        {
+            "model": "qwen3_5_9b",
+            "benchmark_file": "metrics_benchmark_qwen3_5_9b.json",
+            "judge_file": "judged_benchmark_qwen3_5_9b_gpt-oss_20b.json",
+            "judge_model": "gpt-oss:20b",
+            "clarification_evaluation": {
+                "deterministic_accuracy": 0.65,
+                "semantic_accuracy": null,
+                "combined_accuracy": null
+            },
+            "metrics": {
+                "route_accuracy": {
+                    "score": 0.8333333333333334,
+                    "evaluated": null
+                },
+                "data_retrieval_accuracy": {
+                    "score": 0.7596153846153846,
+                    "evaluated": null
+                },
+                "policy_answer_accuracy": {
+                    "score": 1.0,
+                    "evaluated": 24
+                },
+                "both_answer_accuracy": {
+                    "score": 0.7604166666666666,
+                    "evaluated": 24
+                },
+                "clarification_accuracy": {
+                    "score": 0.65,
+                    "evaluated": null
+                },
+                "factual_correctness": {
+                    "score": 0.8675,
+                    "evaluated": 80
+                },
+                "faithfulness": {
+                    "score": 0.9018750000000001,
+                    "evaluated": 80
+                },
+                "answer_relevancy": {
+                    "score": 0.890625,
+                    "evaluated": 80
+                },
+                "context_precision": {
+                    "score": 0.9267857142857142,
+                    "evaluated": 56
+                },
+                "context_recall": {
+                    "score": 0.8312499999999999,
+                    "evaluated": 56
+                },
+                "average_latency_seconds": {
+                    "score": 4.930358333333333,
+                    "evaluated": null
+                }
+            }
+        }
+    ]
+}

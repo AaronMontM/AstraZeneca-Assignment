@@ -225,6 +225,10 @@ Wait until PostgreSQL reports a healthy status.
 
 From the `backend` directory, install the dependencies using the project's dependency manifest.
 
+```bash
+python -m pip install -r requirements.txt
+```
+
 Then start the API:
 
 ```bash

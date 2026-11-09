@@ -17,7 +17,7 @@ import pandas as pd
 # ---------------------------------------------------------
 
 EVALUATION_DIR = Path(__file__).resolve().parent
-DATASET_PATH = EVALUATION_DIR / "datasets" / "ground_truth.xlsx"
+DATASET_PATH = EVALUATION_DIR / "ground_truth_data" / "ground_truth.xlsx"
 RAW_RESULTS_DIR = EVALUATION_DIR / "results" / "raw"
 
 API_URL = os.getenv(

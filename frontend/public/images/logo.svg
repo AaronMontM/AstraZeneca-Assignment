@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-labelledby="title desc">
+  <title id="title">Finaitec Financial Solutions</title>
+  <desc id="desc">Finaitec logo with a layered F symbol in plum, purple and amber.</desc>
+  <defs>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#830051"/>
+      <stop offset="1" stop-color="#570038"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(18 18)">
+    <path d="M24 142 C37 91 59 42 104 22 C128 11 158 12 183 12 L167 48 C151 77 126 88 99 88 L83 88 C62 99 48 121 39 151 Z" fill="#830051"/>
+    <path d="M13 166 C28 119 52 82 91 72 C108 68 127 69 151 69 L202 69 C190 99 166 115 136 115 L95 115 C71 126 53 148 43 177 Z" fill="#EFAB00"/>
+    <path d="M13 166 C43 154 65 151 89 151 L117 151 C105 177 84 191 56 193 L0 193 Z" fill="#570038"/>
+    <path d="M94 115 L136 115 C126 137 108 151 89 151 L43 177 C53 148 71 126 95 115 Z" fill="#A52B78"/>
+  </g>
+  <g transform="translate(255 0)">
+    <text x="0" y="116" font-family="Inter, Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-2.5" fill="#570038">Finaitec</text>
+    <circle cx="224" cy="42" r="6" fill="#EFAB00"/>
+    <text x="4" y="158" font-family="Inter, Arial, Helvetica, sans-serif" font-size="25" font-weight="500" letter-spacing="3.4" fill="#830051">FINANCIAL SOLUTIONS</text>
+  </g>
+</svg>

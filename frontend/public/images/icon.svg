@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Finaitec app icon</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#830051"/>
+      <stop offset="1" stop-color="#570038"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <path d="M112 315 C132 235 168 153 240 120 C280 102 330 105 374 105 L348 166 C323 215 282 234 238 234 L213 234 C179 253 153 289 138 333 Z" fill="#B64A91"/>
+  <path d="M91 356 C116 280 155 222 220 207 C249 200 281 203 321 203 L411 203 C379 252 340 275 291 275 L223 275 C183 293 153 329 136 374 Z" fill="#EFAB00"/>
+  <path d="M91 356 C139 336 176 332 215 332 L262 332 C245 375 210 399 164 403 L70 403 Z" fill="#F7C84D"/>
+  <path d="M223 275 L291 275 C274 311 245 332 215 332 L136 374 C153 329 183 293 223 275 Z" fill="#A52B78"/>
+</svg>

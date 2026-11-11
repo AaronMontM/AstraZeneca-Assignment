@@ -125,17 +125,33 @@ The clarification route helps avoid unsupported assumptions, for example when a 
 
 The Assistant also includes a compact Summary panel displaying key financial indicators, including total net spend, invoice count, spending by currency and spending by vendor status.
 
+<p align="center">
+  <img src="frontend/public/assistant_view.png" width="85%" alt="Finance Assistant">
+</p>
+
 ### Dashboard
 
 The Dashboard complements the Assistant Summary by providing additional financial visualisations and breakdowns. While the Summary offers an immediate overview, the Dashboard provides a more detailed analytical view for exploring spending patterns and other financial indicators.
+
+<p align="center">
+  <img src="frontend/public/dasboard_view.png" width="85%" alt="Financial Dashboard">
+</p>
 
 ### Data Explorer
 
 A dedicated interface to inspect invoice records and apply filters. It provides a way to verify the underlying data behind assistant responses.
 
+<p align="center">
+  <img src="frontend/public/data_explorer_view.png" width="85%" alt="Data Explorer">
+</p>
+
 ### Recent History
 
 Users can revisit previous conversations, allowing them to recover earlier questions and answers without having to repeat the analysis.
+
+<p align="center">
+  <img src="frontend/public/history_view.png" width="85%" alt="Conversation History">
+</p>
 
 ---
 

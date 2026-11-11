@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   description:
     "Finance Spend Intelligence Assistant for procurement and financial analysis.",
   icons: {
-    icon: "/images/icon.png",
-    shortcut: "/images/icon.png",
-    apple: "/images/icon.png",
+    icon: "/images/icon.svg",
+    shortcut: "/images/icon.svg",
+    apple: "/images/icon.svg",
   },
 };
 

@@ -46,17 +46,13 @@ export default function Sidebar() {
       {/* Brand */}
       <div className="flex h-20 flex-col justify-center gap-1 border-b border-gray-100 px-6">
         <Image
-          src="/images/logo.jpeg"
-          alt="AstraZeneca"
-          width={150}
-          height={60}
+          src="/images/logo.svg"
+          alt="Finora"
+          width={192}
+          height={48}
           priority
-          className="h-10 w-auto max-w-full object-contain object-left"
+          className="h-32 w-auto max-w-full object-contain object-left"
         />
-
-        <p className="text-[10px] font-medium uppercase tracking-[0.13em] text-gray-400">
-          Finance Intelligence
-        </p>
       </div>
 
       {/* Navigation */}

@@ -31,18 +31,29 @@ function formatDate(value: unknown): string {
   if (typeof value !== "string") return "—";
 
   const parts = value.split("-");
+
   return parts.length === 3
     ? `${parts[2]}/${parts[1]}/${parts[0]}`
     : value;
 }
 
-function SpendSummary({ result }: { result: Record<string, unknown> }) {
+// ---------------------------------------------------------
+// Spend summary
+// ---------------------------------------------------------
+
+function SpendSummary({
+  result,
+}: {
+  result: Record<string, unknown>;
+}) {
   const breakdown = Array.isArray(result.breakdown)
     ? (result.breakdown as Record<string, unknown>[])
     : [];
 
   const groupedBy =
-    typeof result.grouped_by === "string" ? result.grouped_by : "unknown";
+    typeof result.grouped_by === "string"
+      ? result.grouped_by
+      : "unknown";
 
   const groupField =
     groupedBy === "vendor"
@@ -58,7 +69,9 @@ function SpendSummary({ result }: { result: Record<string, unknown> }) {
         ? "Currency"
         : groupedBy === "unknown"
           ? "Category"
-          : groupedBy.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+          : groupedBy
+              .replace(/_/g, " ")
+              .replace(/\b\w/g, (c) => c.toUpperCase());
 
   return (
     <div className="space-y-4">
@@ -140,7 +153,15 @@ function SpendSummary({ result }: { result: Record<string, unknown> }) {
   );
 }
 
-function InvoiceResults({ result }: { result: Record<string, unknown> }) {
+// ---------------------------------------------------------
+// Invoice search results
+// ---------------------------------------------------------
+
+function InvoiceResults({
+  result,
+}: {
+  result: Record<string, unknown>;
+}) {
   const invoices = Array.isArray(result.invoices)
     ? (result.invoices as InvoiceRecord[])
     : [];
@@ -153,9 +174,7 @@ function InvoiceResults({ result }: { result: Record<string, unknown> }) {
   return (
     <div className="space-y-2">
       <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-gray-500">
-        <span>
-          {totalMatches.toLocaleString()} matching invoices
-        </span>
+        <span>{totalMatches.toLocaleString()} matching invoices</span>
         <span>
           Showing {invoices.length} of {totalMatches}
         </span>
@@ -226,6 +245,170 @@ function InvoiceResults({ result }: { result: Record<string, unknown> }) {
     </div>
   );
 }
+
+// ---------------------------------------------------------
+// Single invoice details
+// ---------------------------------------------------------
+
+function formatInvoiceValue(
+  field: string,
+  value: unknown,
+  invoice: InvoiceRecord
+): string {
+  if (value === null || value === undefined || value === "") {
+    return field === "po_number" ? "Missing" : "—";
+  }
+
+  if (field === "invoice_date") {
+    return formatDate(value);
+  }
+
+  if (field === "amount" && typeof value === "number") {
+    const currency =
+      typeof invoice.currency === "string" ? invoice.currency : "";
+
+    return `${new Intl.NumberFormat("en-IE", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(value)} ${currency}`;
+  }
+
+  if (field === "EUR_amount" && typeof value === "number") {
+    return formatCurrency(value);
+  }
+
+  if (typeof value === "boolean") {
+    return value ? "Yes" : "No";
+  }
+
+  if (typeof value === "number") {
+    return value.toLocaleString("en-IE");
+  }
+
+  return String(value);
+}
+
+function formatFieldLabel(field: string): string {
+  const labels: Record<string, string> = {
+    invoice_number: "Invoice number",
+    vendor_name: "Vendor",
+    vendor_id: "Vendor ID",
+    vendor_status: "Vendor status",
+    invoice_date: "Invoice date",
+    description: "Description",
+    amount: "Original amount",
+    EUR_amount: "Amount in EUR",
+    currency: "Currency",
+    vendor_country: "Vendor country",
+    vendor_category: "Vendor category",
+    cost_center: "Cost center",
+    po_number: "Purchase order",
+    missing_po: "Missing PO",
+    requires_po: "PO required",
+    maverick_spend: "Maverick spend",
+    approved_by: "Approved by",
+    required_approver: "Required approver",
+    missing_approver: "Missing approver",
+    requires_PE_escalation: "PE escalation required",
+  };
+
+  return labels[field] ??
+    field.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+function InvoiceDetails({
+  result,
+}: {
+  result: Record<string, unknown>;
+}) {
+  const invoice =
+    result.invoice && typeof result.invoice === "object"
+      ? (result.invoice as InvoiceRecord)
+      : null;
+
+  if (result.found !== true || !invoice) {
+    return (
+      <p className="text-xs text-gray-500">
+        Invoice details are not available.
+      </p>
+    );
+  }
+
+  const fields = [
+    "invoice_number",
+    "vendor_name",
+    "vendor_id",
+    "vendor_status",
+    "invoice_date",
+    "description",
+    "amount",
+    "currency",
+    "EUR_amount",
+    "vendor_country",
+    "vendor_category",
+    "cost_center",
+    "po_number",
+    "missing_po",
+    "requires_po",
+    "maverick_spend",
+    "approved_by",
+    "required_approver",
+    "missing_approver",
+    "requires_PE_escalation",
+  ];
+
+  return (
+    <div className="space-y-2">
+      <h4 className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+        Invoice details
+      </h4>
+
+      <div className="overflow-x-auto rounded-lg border border-gray-200">
+        <table className="w-full text-left text-xs">
+          <tbody className="divide-y divide-gray-100">
+            {fields
+              .filter((field) => field in invoice)
+              .map((field) => {
+                const value = invoice[field];
+
+                const isWarning =
+                  field === "vendor_status" && value === "ON_HOLD";
+
+                const isMissing =
+                  (field === "po_number" &&
+                    (value === null || value === undefined)) ||
+                  (field === "missing_po" && value === true) ||
+                  (field === "maverick_spend" && value === true) ||
+                  (field === "requires_PE_escalation" && value === true);
+
+                return (
+                  <tr key={field} className="even:bg-gray-50/70">
+                    <th className="w-2/5 px-3 py-2 font-medium text-gray-600">
+                      {formatFieldLabel(field)}
+                    </th>
+
+                    <td className="px-3 py-2 text-gray-800">
+                      {isWarning || isMissing ? (
+                        <span className="inline-flex rounded-full bg-red-50 px-2 py-1 text-[10px] font-medium text-red-700">
+                          {formatInvoiceValue(field, value, invoice)}
+                        </span>
+                      ) : (
+                        formatInvoiceValue(field, value, invoice)
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------
+// Evidence panel
+// ---------------------------------------------------------
 
 export default function EvidencePanel({
   evidence,
@@ -308,6 +491,8 @@ export default function EvidencePanel({
 
               {item.tool === "get_spend_summary" ? (
                 <SpendSummary result={item.result} />
+              ) : item.tool === "get_invoice_details" ? (
+                <InvoiceDetails result={item.result} />
               ) : Array.isArray(item.result.invoices) ? (
                 <InvoiceResults result={item.result} />
               ) : (

@@ -134,7 +134,7 @@ The Assistant also includes a compact Summary panel displaying key financial ind
 The Dashboard complements the Assistant Summary by providing additional financial visualisations and breakdowns. While the Summary offers an immediate overview, the Dashboard provides a more detailed analytical view for exploring spending patterns and other financial indicators.
 
 <p align="center">
-  <img src="https://github.com/AaronMontM/Finance-AI-Assistant/blob/main/frontend/public/images/dasboard_view.png" width="85%" alt="Financial Dashboard">
+  <img src="https://github.com/AaronMontM/Finance-AI-Assistant/blob/main/frontend/public/images/dashboard_view.png" width="85%" alt="Financial Dashboard">
 </p>
 
 ### Data Explorer
